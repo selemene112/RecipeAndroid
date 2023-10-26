@@ -8,6 +8,8 @@ function TextInputComponent(props) {
         style={styles.input}
         placeholder={props.placeholder}
         secureTextEntry={props.isPassword}
+        value={props.value}
+        onChangeText={props.onChangeText}
       />
     </View>
   );
