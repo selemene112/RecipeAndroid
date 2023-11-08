@@ -1,58 +1,51 @@
-import React from 'react';
-import {Text, View, Image} from 'react-native';
+import * as React from 'react';
+import {NavigationContainer} from '@react-navigation/native';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import {Provider} from 'react-redux'; // Impor Provider dari Redux
+import configureStore from './src/Redux/store'; // Impor store Redux Anda
+import LoginOrganisme from './src/Component/Organisme/Auth/Login';
+import LoginScreen from './src/Screen/Auth/Login';
+import CardRecipe from './src/Component/Organisme/Recipe/CardRecipe';
+import SearchScreen from './src/Component/Organisme/SearchRecipe/SearchRecipe';
+import Search from './src/Component/Organisme/SearchRecipe/SearchRecipe1';
+import DetailRecipe from './src/Component/Organisme/Recipe/DetailRecipe';
+import Profil from './src/Component/Organisme/Profil/Profil';
+import MyRecipe from './src/Component/Organisme/Recipe/MyRecipe';
+import AddRecipe from './src/Component/Organisme/Recipe/AddRecipe';
+import EditMyRecipe from './src/Component/Organisme/Recipe/EditMyRecipe';
+import TouchableOpacityProfil from './src/Component/Molecules/TouchableOpacity/TouchableOpacity,';
+import Navbar from './src/Component/Molecules/Navbar';
+import HomePage from './src/Component/Template/RecipeTemplate/Home';
 
-const App = () => {
+const Stack = createNativeStackNavigator();
+const {store} = configureStore();
+
+function App() {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: 'yellow',
-      }}>
-      <Image
-        source={require('./src/image/BgLogin.jpg')}
-        style={{position: 'absolute', width: '100%', height: '100%'}}
-      />
-      <View
-        style={{
-          backgroundColor: 'white',
-          width: 300,
-          height: 300,
-          borderRadius: 20,
-        }}>
-        <Image
-          source={require('./src/image/Login.png')}
-          style={{
-            width: 100,
-            alignItems: 'center',
-            height: 100,
-            borderRadius: 100,
-          }}
-        />
-        <Text
-          style={{
-            fontSize: 30,
-            marginTop: 5,
-            textAlign: 'center',
-            fontWeight: 'bold',
-          }}>
-          <Text style={{color: 'yellow'}}>WEL</Text>
+    <Provider store={store}>
+      <NavigationContainer>
+        <Stack.Navigator
+          initialRouteName="MyRecipe"
+          screenOptions={{headerShown: false}}>
+          {/* <Stack.Screen name="LoginOrganisme" component={LoginOrganisme} />  */}
+          <Stack.Screen name="Profil" component={Profil} />
+          <Stack.Screen name="AddRecipe" component={AddRecipe} />
+          <Stack.Screen name="EditMyRecipe" component={EditMyRecipe} />
+          <Stack.Screen
+            name="TouchableOpacityProfil"
+            component={TouchableOpacityProfil}
+          />
+          <Stack.Screen name="Navbar" component={Navbar} />
+          <Stack.Screen name="HomePage" component={HomePage} />
 
-          <Text style={{color: 'Black'}}>COME</Text>
-        </Text>
-        <Text
-          style={{
-            fontSize: 20,
-
-            textAlign: 'center',
-            fontWeight: 'bold',
-          }}>
-          Mama Recipe
-        </Text>
-      </View>
-    </View>
+          <Stack.Screen name="MyRecipe" component={MyRecipe} />
+          <Stack.Screen name="Search" component={Search} />
+          <Stack.Screen name="DetailRecipe" component={DetailRecipe} />
+          <Stack.Screen name="CardRecipe" component={CardRecipe} />
+        </Stack.Navigator>
+      </NavigationContainer>
+    </Provider>
   );
-};
+}
 
 export default App;
