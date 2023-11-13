@@ -74,3 +74,10 @@ export default CardRecipe;
               <Text style={styles.textTitle}>{item.title}</Text>
               <Text style={styles.textIngredients}>{item.ingredients}</Text>
             </View>
+
+
+
+
+
+
+            guest@gmail.com

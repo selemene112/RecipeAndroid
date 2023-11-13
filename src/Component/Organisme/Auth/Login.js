@@ -21,7 +21,7 @@ function LoginOrganisme() {
     dispatch(loginUser(inputData))
       .then(response => {
         if (response) {
-          navigation.navigate('CardRecipe');
+          navigation.navigate('HomePage');
         }
       })
       .catch(error => {
