@@ -25,9 +25,10 @@ function App() {
     <Provider store={store}>
       <NavigationContainer>
         <Stack.Navigator
-          initialRouteName="MyRecipe"
+          initialRouteName="HomePage"
           screenOptions={{headerShown: false}}>
-          {/* <Stack.Screen name="LoginOrganisme" component={LoginOrganisme} />  */}
+          <Stack.Screen name="LoginOrganisme" component={LoginOrganisme} />
+          <Stack.Screen name="LoginScreen" component={LoginScreen} />
           <Stack.Screen name="Profil" component={Profil} />
           <Stack.Screen name="AddRecipe" component={AddRecipe} />
           <Stack.Screen name="EditMyRecipe" component={EditMyRecipe} />
