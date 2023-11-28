@@ -8,6 +8,18 @@
 
 where every user can like and comment on every existing recipe
 </p>
+
+<br/>
+    <br/>
+    <a href="https://github.com/selemene112/RecipeAndroid"><strong>Explore the docs »</strong></a>
+    <br/>
+    <br/>
+    <a href="https://drive.google.com/file/d/1Dx3I1fRX1gRtEgx4HV7LKPhNQtVXV0yQ/view?usp=drive_link">View Demo</a>
+    .
+    <a href="https://github.com/selemene112/RecipeAndroid//issues">Report Bug</a>
+    .
+    <a href="https://github.com/selemene112/RecipeAndroid/issues">Request Feature</a>
+</p>
 </div>
 
 ## About This Project 
