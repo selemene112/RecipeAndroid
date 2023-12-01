@@ -22,9 +22,28 @@ where every user can like and comment on every existing recipe
 </p>
 </div>
 
-## About This Project 
+## Table Of Contents
+
+- [About the Project](#about-the-project)
+- [Built With](#built-with)
+- [How To Instal This Project](#how-to-instal-this-project)
+- [Perview Aplikasi](#perview-aplikasi)
+- [Contact](#contact)
+
+## About The Project
 
 This project was created using React Native, the basic language of which is Javascript. The application I created serves to create and display the recipes that we have so that many people can see them and make it easier for us to cook.
+
+## Built With
+
+This app was built with some technologies below:
+
+- CSS
+- Javascript
+- React Native
+- Axios
+- Redux
+
 
 
 ## How To Instal This Project 
@@ -73,9 +92,15 @@ This is a comment feature that uses WEB SOCKET to carry out real-time data trans
 In the future, I plan to develop a project to handle payments so that they can be connected directly to the original banking system
 If you are interested in this project further, you can contact me on some of my social media
 
-Email: Ariyanda2107@gmail.com
+## Contact
 
-Linkedin: https://www.linkedin.com/in/muhammad-ariyanda-zulyadiansyah-18141426a/
+- Email : [`Ariyanda2107@gmail.com`](mailto:Ariyanda2107@gmail.com)
+
+- LinkedIn : [`https://www.linkedin.com/in/muhammad-ariyanda-zulyadiansyah-18141426a/`](https://www.linkedin.com/in/muhammad-ariyanda-zulyadiansyah-18141426a/)
+
+- GitHub : [`https://github.com/selemene112`](https://github.com/selemene112)
+
+
 
 
 
