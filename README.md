@@ -92,6 +92,13 @@ This is a comment feature that uses WEB SOCKET to carry out real-time data trans
 In the future, I plan to develop a project to handle payments so that they can be connected directly to the original banking system
 If you are interested in this project further, you can contact me on some of my social media
 
+
+:rocket: [`Backend Mama Recipe`](https://github.com/selemene112/BE_recipe)
+
+:rocket: [`Frontend Mama Recipe`](https://github.com/selemene112/FE_recipe/)
+
+:rocket: [`Mobile Mama Recipe`](https://github.com/selemene112/RecipeAndroid)
+
 ## Contact
 
 - Email : [`Ariyanda2107@gmail.com`](mailto:Ariyanda2107@gmail.com)
